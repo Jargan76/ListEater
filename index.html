@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The List Eater</title>
+    <link rel="stylesheet" type="text/css" href="listEater.css" />
+    <link rel="stylesheet" type="text/css" href="bs/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+    <div class="col-xs-4">
+      <p  class="pRow">Random item.</p>
+      <button onclick="randomAdd()">Random</button>
+    </div>
+    <div class="col-xs-4">
+       <p class="pRow">Add own item .</p>
+       <button onclick="addInput1()"> AddItem </button>
+     </div>
+     <div class="col-xs-4">
+      <p  class="pRow">Remove <strong>first</strong>.</p>
+      <button onclick="chomp()">Remove</button>
+    </div>
+  </div> <!-- /row -->
+    </div>   <!-- / nav container -->
+</nav>
+  <div class="container">
+  <div id="box">
+     <p id="list"></p>
+   </div>
+</div> <!-- / main container -->
+<div id="info">
+<p><small id="clicks"></small></p>
+</div>
+
+<!--
+ ________ script___________
+ -->
+<script src="listEater.js"></script>
+<!--
+_________________________
+ -->
+</body>
+</html>
