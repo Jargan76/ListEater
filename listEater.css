@@ -1,66 +1,113 @@
-p {
-  font-size: 20px;
- }
-button {
-  background-color: yellow;
-  margin-left: 25px;
+
+/*
+==============clear fix===========
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-div {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.0;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+===============Main CSS========================
+*/
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
   text-align: center;
 }
+
+.pRow {
+  font-size: 1.5em;
+ }
 .navbar-default {
-    padding-bottom: 10px;
+    padding-bottom: 1.2em;
+}
+
+.btn-default:active:hover, .btn-default {
+    color: #f1eeee;
+    background-color: #2a6282;
+    border-color: #000;
+    font-size: 3.2em;
+    font-weight: 600;
+    margin-top: 0.3em;
+}
+.btn-default:focus {
+  color: #2a6282;
+  background-color: #f1eeee;
+}
+.navbar-fixed-top {
+  z-index: 0;
+}
+.modal-backdrop {
+  background-color: #5B9D9C;
+}
+.modal-content {
+  margin-top: 10em;
+}
+#message {
+  font-size: 3.0em;
 }
 #info {
     position: fixed;
-    top: 71px;
+    bottom: 50px;
+    text-align: left;
   }
 #info p {
     font-size: 12px;
   }
 #box {
-    padding: 15px 15px;
     width: 90%;
-    margin-left: 4%;
-    margin-top: 7em;
-    background-color:#4C3131;
-    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11em;
+    background-color:#C9CAF2;
+    color: #000;
 }
 #box p {
-    font-size: 28px;
+    font-size: 2.5em;
 }
 /*---------------------------------------------------------------
             @Media Starts
 */
-@media screen and (max-width: 328px){
-    #box {
-        margin-top: 7em;
-    }
-}
-@media screen and (max-width: 456px){
-   #box {
-        margin-top: 7.5em;
-   }
-}
 
-@media screen and (max-width: 463px){
-    #box{
-        margin-left: 1%;
-        margin-top: 1em;
-        width: 98%;
+@media screen and (max-width: 320px){
 
-    }
-}
-
-@media screen and (max-width: 480px){
-    #box{
-        margin-left: 1%;
-        margin-top: 9em;
-    }
-}
-
-@media screen and (max-width: 594px){
-    .pRow {
-         font-size: 15px;
-    }
 }
