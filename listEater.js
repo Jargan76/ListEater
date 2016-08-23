@@ -61,7 +61,7 @@ function randomAdd(){
             callFruit();
             break;
         case 7:
-            addItem("dirty Sock");
+            addItem("dirty sock");
             callFruit();
             break;
         case 8:
