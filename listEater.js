@@ -1,25 +1,28 @@
 /*When I first started this it was for a shopping quick list, But evoled into this Funny game*/
 
 /*     ------------------ This top portion of comments is wish list-----------
-*
+*    Change the imput from standard to modal imput
 *    Animation to words coming and going.
 *    want to add a random sound to the buttons.
+*
 *      --------------- This portion is for needed fixed or changes
 *   fix  when additem is left blank and you click ok instead of cancel it leaves a ", " - should be null
 *
 */
-var fruits = ["Any Item you want"];
+const mymodal = $('#myModal');
+var fruits = [""];
 var totalClicks = 0;
-var randomMultiplier = 47; // must be 1 more than number of cases
-var mymodal = $('#myModal');
+var randomMultiplier = 62; // must be 1 more than number of cases
 var mess = "Sorry, I didn't get that. Try again.";
 document.getElementById("list").innerHTML = fruits;  // this shows the content
+// --------let the functions start ----------
 function randomAdd(){
    callFruit();
    btnCount();
     var random = function(){
         var ran = Math.floor(Math.random() * randomMultiplier);
-        return Math.floor(Math.random() * ran); // added second math.random to decrease odds of same item back to back
+      //  return Math.floor(Math.random() * ran); // added second math.random to decrease odds of same item back to back
+          return ran;
     };
   var r = random();
     switch(r) {
@@ -30,43 +33,43 @@ function randomAdd(){
             break;
     */
         case 0:
-            addItem("Apple");
+            addItem("apple");
             callFruit();
             break;
         case 1:
-            addItem("Toilet seat");
+            addItem("toilet seat");
             callFruit();
             break;
         case 2:
-            addItem("Kitty litter");
+            addItem("kitty litter");
             callFruit();
             break;
         case 3:
-            addItem("Wooden block");
+            addItem("wooden block");
             callFruit();
             break;
         case 4:
-            addItem("Garage door ");
+            addItem("garage door");
             callFruit();
             break;
         case 5:
-            addItem("Bunny Slippers");
+            addItem("bunny Slippers");
             callFruit();
             break;
         case 6:
-            addItem("Fart");
+            addItem("fart");
             callFruit();
             break;
         case 7:
-            addItem("Dirty Sock");
+            addItem("dirty Sock");
             callFruit();
             break;
         case 8:
-            addItem("Cow");
+            addItem("cow");
             callFruit();
             break;
         case 9:
-            addItem("Ewok");
+            addItem("ewok");
             callFruit();
             break;
         case 10:
@@ -78,7 +81,7 @@ function randomAdd(){
             callFruit();
             break;
         case 12:
-            addItem("FizGig");
+            addItem("Fizgig");
             callFruit();
             break;
         case 13:
@@ -86,11 +89,11 @@ function randomAdd(){
             callFruit();
             break;
         case 14:
-            addItem("Goat Cheese");
+            addItem("goat cheese");
             callFruit();
             break;
         case 15:
-            addItem("Purple People Eater");
+            addItem("purple people eater");
             callFruit();
             break;
         case 16:
@@ -98,15 +101,15 @@ function randomAdd(){
             callFruit();
             break;
         case 17:
-            addItem("Ocelot");
+            addItem("ocelot");
             callFruit();
             break;
          case 18:
-            addItem("Spider");
+            addItem("spider");
             callFruit();
             break;
         case 19:
-            addItem("Booger");
+            addItem("booger");
             callFruit();
             break;
         case 20:
@@ -114,27 +117,27 @@ function randomAdd(){
             callFruit();
             break;
         case 21:
-            addItem("Pepper spray");
+            addItem("pepper spray");
             callFruit();
             break;
         case 22:
-            addItem("Bowl");
+            addItem("bowl");
             callFruit();
             break;
         case 23:
-            addItem("Yoda");
+            addItem("does");
             callFruit();
             break;
         case 24:
-            addItem("Beaver");
+            addItem("beaver");
             callFruit();
             break;
         case  25:
-            addItem("Coffee");
+            addItem("coffee");
             callFruit();
             break;
         case 26 :
-            addItem("Monocle");
+            addItem("monocle");
             callFruit();
             break;
         case 27 :
@@ -142,7 +145,7 @@ function randomAdd(){
             callFruit();
             break;
         case 28 :
-            addItem("Ran");
+            addItem("ran");
             callFruit();
             break;
         case 29 :
@@ -158,68 +161,130 @@ function randomAdd(){
             callFruit();
             break;
         case 32 :
-            addItem("Aardvark");
+            addItem("aardvark");
             callFruit();
             break;
         case 33 :
-            addItem("Peanut butter");
+            addItem("peanut butter");
             callFruit();
             break;
         case 34 :
-            addItem("Sloth");
+            addItem("sloth");
             callFruit();
             break;
         case 35 :
-            addItem("Licked");
+            addItem("licked");
             callFruit();
             break;
         case 36 :
-            addItem("Tree");
+            addItem("tree");
             callFruit();
             break;
         case 37 :
-            addItem("Coddled");
+            addItem("coddled");
             callFruit();
             break;
         case 38 :
-            addItem("Hairball");
+            addItem("hairball");
             callFruit();
             break;
         case 39 :
-            addItem("Toe");
+            addItem("toe");
             callFruit();
             break;
         case 40 :
-            addItem("Tac");
+            addItem("tac");
             callFruit();
             break;
         case 41 :
-            addItem("Tic");
+            addItem("tic");
             callFruit();
             break;
         case 42 :
-            addItem("Glasses");
+            addItem("glasses");
             callFruit();
             break;
         case 43 :
-            addItem("Shades");
+            addItem("shades");
             callFruit();
             break;
         case 44 :
-            addItem("Dinosaur");
+            addItem("dinosaur");
             callFruit();
             break;
         case 45 :
-            addItem("Deep");
+            addItem("deep");
             callFruit();
             break;
         case 46 :
-            addItem("Potatoe");
+            addItem("potato");
+            callFruit();
+            break;
+        case  47:
+            addItem("a");
+            callFruit();
+            break;
+        case  48:
+            addItem("and");
+            callFruit();
+            break;
+        case  49:
+            addItem("the");
+            callFruit();
+            break;
+        case  50:
+            addItem("do");
+            callFruit();
+            break;
+        case  51:
+            addItem("also");
+            callFruit();
+            break;
+        case  52:
+            addItem("can");
+            callFruit();
+            break;
+        case  53:
+            addItem("will");
+            callFruit();
+            break;
+        case  54:
+            addItem("high");
+            callFruit();
+            break;
+        case  55:
+            addItem("little");
+            callFruit();
+            break;
+        case  56:
+            addItem("last");
+            callFruit();
+            break;
+        case  57:
+            addItem("young");
+            callFruit();
+            break;
+        case  58:
+            addItem("bad");
+            callFruit();
+            break;
+        case  59:
+            addItem("small");
+            callFruit();
+            break;
+        case  60:
+            addItem("old");
+            callFruit();
+            break;
+        case  61:
+            addItem("own");
             callFruit();
             break;
         default:
             break;
+
     }
+    scrollUp();
 };  // End of randomAdd()
 /*  quick case add messages.
     case * :
@@ -260,7 +325,7 @@ function btnCount(){
     };
 };
 function callFruit(){
-    document.getElementById("list").innerHTML = fruits.join(",  ") ;
+    document.getElementById("list").innerHTML = fruits.join("  ") ;
 };
 function chomp() {
     fruits.shift();
@@ -278,9 +343,13 @@ function addInput1(){
       addItem(i);
       callFruit();
       btnCount();
+      scrollUp();
     }
 };
-
+// --- scroll animation to keep box ontop of nav
+function scrollUp(){
+    window.scrollTo(0, document.body.scrollHeight);
+}
 
 // ---------------------------- modal operations
 
@@ -288,6 +357,9 @@ function showModal(){
     mymodal.find('#message').text(mess);
         mymodal.modal('show');
 }
+
+// ========== add one item to the list to start.
+randomAdd();
 
 //=======END OF DOC============
  $(document).ready(function() {
