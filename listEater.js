@@ -12,7 +12,7 @@
 const mymodal = $('#myModal');
 var fruits = [""];
 var totalClicks = 0;
-var randomMultiplier = 62; // must be 1 more than number of cases
+var randomMultiplier = 70; // must be 1 more than number of cases
 var mess = "Sorry, I didn't get that. Try again.";
 document.getElementById("list").innerHTML = fruits;  // this shows the content
 // --------let the functions start ----------
@@ -280,9 +280,40 @@ function randomAdd(){
             addItem("own");
             callFruit();
             break;
+        case  62:
+            addItem("on");
+            callFruit();
+            break;
+        case  63:
+            addItem("wearing");
+            callFruit();
+            break;
+        case  64:
+            addItem("have");
+            callFruit();
+            break;
+        case  65:
+            addItem("with");
+            callFruit();
+            break;
+        case  66:
+            addItem("over");
+            callFruit();
+            break;
+        case  67:
+            addItem("Jake Roper");
+            callFruit();
+            break;
+        case  68:
+            addItem("Kevin Lieber");
+            callFruit();
+            break;
+        case  69:
+            addItem("hot");
+            callFruit();
+            break;
         default:
             break;
-
     }
     scrollUp();
 };  // End of randomAdd()
